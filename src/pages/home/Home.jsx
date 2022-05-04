@@ -4,8 +4,8 @@ import './home.css';
 // import { WidgetLg } from '../../components/widgetLg/WidgetLg';
 import { useEffect, useMemo, useState } from 'react';
 import axios from 'axios';
-// import { WidgetSm } from '../../components/widgetSm/WidgetSm';
-// import { WidgetLg } from '../../components/widgetLg/WidgetLg';
+import { WidgetSm } from '../../components/widgetSm/WidgetSm';
+import { WidgetLg } from '../../components/widgetLg/WidgetLg';
 
 export default function Home() {
   const [userStats, setUserStats] = useState([]);
@@ -63,8 +63,8 @@ export default function Home() {
         dataKey="Active User"
       />
       <div className="homeWidget">
-        {/* <WidgetSm /> */}
-        {/* <WidgetLg /> */}
+        <WidgetSm />
+        <WidgetLg />
       </div>
     </div>
   );
